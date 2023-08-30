@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
     $row=(mysqli_fetch_array($result));
 	if (mysqli_num_rows($result) > 0) {
         $_SESSION['name']=$row['name'];
-		$_SESSION['loginpage'] = " ";
+		// $_SESSION['loginpage'] = " ";
         $_SESSION['email']="email";
         $_SESSION['password']="password";
 		if (isset($_POST['remember_me'])) {
